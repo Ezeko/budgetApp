@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class SliderScreen extends StatefulWidget {
@@ -8,8 +9,14 @@ class SliderScreen extends StatefulWidget {
 class _SliderScreenState extends State<SliderScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      body: Slider(
+        autofocus: true,
+        value: 1,
+        max: 20.0,
+        onChanged: null,
+        label: 'This is slider label',
+        ),
     );
   }
 }
